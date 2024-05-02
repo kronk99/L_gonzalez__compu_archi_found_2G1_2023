@@ -1,0 +1,65 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/simulation/modelsim
+vPWM
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1714543641
+!i10b 1
+!s100 _:>=:Zb^i]4EZbQn`WUeD3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?^XRZim@obO0KZ0ZOckg`2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1714542541
+8C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM.sv
+FC:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM.sv
+!i122 0
+L0 1 63
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1714543641.000000
+!s107 C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023|C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023
+Z9 tCvgOpt 0
+n@p@w@m
+vPWM_tb
+R1
+R2
+!i10b 1
+!s100 4=WZnmMZX8YC3KBAXWXbb3
+R3
+Ii9hLEGU8Y]KdT`FP`BIYo2
+R4
+S1
+R0
+w1714543626
+8C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM_tb.sv
+FC:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM_tb.sv
+!i122 1
+L0 1 43
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023|C:/Users/Gustavo/Desktop/L_gonzalez__compu_archi_found_2G1_2023/PWM_tb.sv|
+!i113 1
+R7
+R8
+R9
+n@p@w@m_tb

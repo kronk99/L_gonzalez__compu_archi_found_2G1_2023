@@ -1,0 +1,44 @@
+`timescale 1ns/1ns
+
+module PWM_tb;
+
+    // Parámetros
+    parameter CLK_PERIOD = 10; // Periodo del clock en ns
+    
+    // Señales
+    reg clk;
+    reg rst;
+    reg [3:0] value;
+    wire pwm;
+    
+    // Instancia del módulo
+    PWM dut (
+        .clk(clk),
+        .rst(rst),
+        .value(value),
+        .pwm(pwm)
+    );
+    
+    // Generador de clock
+    always #((CLK_PERIOD/2)) clk = ~clk;
+    
+    // Test Case
+    initial begin
+        clk = 0;
+        rst = 1;
+        value = 4'b0000; // 0%
+        #50;
+        rst = 0; // Desactivar reset
+        #1000;
+        // Cambiar valores de entrada y observar la salida
+        value = 4'b1111; // 100%
+        #1000;
+        value = 4'b1100; // 80%
+        #1000;
+        value = 4'b1001; // 60%
+        #1000;
+        // Agrega más valores de prueba según sea necesario
+        $stop;
+    end
+    
+endmodule
