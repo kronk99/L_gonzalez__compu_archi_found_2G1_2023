@@ -1,0 +1,173 @@
+# Reading pref.tcl
+# do ALU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/sub.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/sub.sv 
+# -- Compiling module sub
+# 
+# Top level modules:
+# 	sub
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/add.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/add.sv 
+# -- Compiling module add
+# 
+# Top level modules:
+# 	add
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv 
+# -- Compiling module inversor
+# -- Compiling module nand_d
+# 
+# Top level modules:
+# 	inversor
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/add1bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/add1bit.sv 
+# -- Compiling module add1bit
+# 
+# Top level modules:
+# 	add1bit
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/andGate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/andGate.sv 
+# -- Compiling module andGate
+# 
+# Top level modules:
+# 	andGate
+# End time: 13:13:07 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/orGate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:07 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/orGate.sv 
+# -- Compiling module orGate
+# 
+# Top level modules:
+# 	orGate
+# End time: 13:13:08 on May 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:08 on May 06,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda" C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU_tb.sv 
+# -- Compiling module ALU_tb
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 13:13:08 on May 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
+# Start time: 13:13:08 on May 06,2024
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.add
+# Loading work.sub
+# Loading work.inversor
+# Loading work.orGate
+# Loading work.andGate
+# Loading work.add1bit
+# Loading work.nand_d
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/sub.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'out'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2 File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/sub.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[0]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[1]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[2]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(43).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/subtractor/inverter2/loop[3]/nand_inst File: C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/inversor.sv Line: 21
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU_tb.sv(65)
+#    Time: 40 ps  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU_tb.sv line 65
+# End time: 13:27:49 on May 06,2024, Elapsed time: 0:14:41
+# Errors: 0, Warnings: 26

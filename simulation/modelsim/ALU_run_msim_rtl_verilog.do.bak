@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda {C:/Users/edgar/OneDrive/Documents/Gaby/ProyectoFunda/ALU.sv}
+
