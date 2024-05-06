@@ -36,28 +36,22 @@ reg [3:0] conversion_table [0:15] = '{   // Se utiliza asignación de agregado
 
 always @*
 begin
-    compare_value = conversion_table[value]; // Obtiene el valor de comparación desde la tabla de conversión
+    // Obtiene el valor de comparación desde la tabla de conversión
+    compare_value = conversion_table[value]; 
 end
 
 always @(posedge clk or posedge rst)
 begin
-    if(rst) // Si se activa el reset
-        counter <= 4'b0000; // Reinicia el contador
-    else if(counter == 4'b1111) // Si el contador alcanza su máximo
-        counter <= 4'b0000; // Reinicia el contador
-    else
-        counter <= counter + 1; // Incrementa el contador
+    // Si se activa el reset
+    counter <= (rst) ? 4'b0000 : (counter == 4'b1111) ? 4'b0000 : counter + 1;
 end
 
 // Genera el pulso PWM
 always @(posedge clk or posedge rst)
 begin
-    if(rst) // Si se activa el reset
-        pwm <= 1'b0; // Salida PWM en bajo
-    else if(counter < compare_value) // Si el contador es menor que el valor de comparación
-        pwm <= 1'b1; // Salida PWM en alto
-    else
-        pwm <= 1'b0; // Salida PWM en bajo
+    // Si se activa el reset
+    pwm <= (rst) ? 1'b0 : (counter < compare_value) ? 1'b1 : 1'b0;
 end
 
 endmodule
+
