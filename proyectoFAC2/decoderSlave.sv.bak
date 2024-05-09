@@ -1,0 +1,4 @@
+module decoderSlave(input logic clk ,input logic [10:0] instruct ,output logic [3:0] num1,
+num2, output logic [1:0] oper ,Ain );
+	
+endmodule
