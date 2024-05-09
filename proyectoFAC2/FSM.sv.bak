@@ -1,0 +1,32 @@
+module FSM(input logic clk,rst,Ain,Bin,Cin,Din);
+
+
+logic [1:0] state, next_state; //Necesito 3 bits porque son 6 estados
+
+//Reset
+always_ff @ (posedge clk or posedge rst)
+	if (rst) state = 2'b00;
+	else
+		state = next_state;
+
+//Logica del siguiente estado
+always_comb
+	//estado de espera de handshake
+	 next_state = (state == 2'b00) & (Ain == 1'b1) ? 2'b01 : next_state; //si se cumple cambia next state, si no
+	 //se mantiene
+	 next_state = (state == 2'b01) & (in == 1'b1) ? 2'b01 : next_state;
+//output logic
+
+
+
+
+assign Timer = (state == 4'b0001);// El timer se hace 1 para indicar que se debe iniciar la cuenta de 15 segundos para el turno del jugador
+assign Turno = (state == 4'b0001); // Es 1 cuando es el turno del jugador
+assign TurnoPC = (state == 4'b0100); //Turno de la PC
+assign SBarcos = (state == 4'b0000); 
+assign CBarcos = (state == 4'b1000); 
+assign CVictoria = (state == 4'b0011); 
+assign CDerrota = (state == 4'b0110); 
+assign Ec = (state == 4'b0011); //estado de comprobacion de victoria jugador
+assign Ecp=(state == 4'b0110); //estado comprobacion de victoria pc;
+endmodule
