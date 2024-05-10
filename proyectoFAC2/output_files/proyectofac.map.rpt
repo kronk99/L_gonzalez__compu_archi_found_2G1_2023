@@ -1,5 +1,5 @@
-Analysis & Elaboration report for proyectofac
-Wed May  8 18:28:30 2024
+Analysis & Synthesis report for proyectofac
+Fri May 10 09:32:27 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -7,10 +7,17 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -34,47 +41,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed May  8 18:28:30 2024          ;
-; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                 ; proyectofac                                    ;
-; Top-level Entity Name         ; FSM                                            ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri May 10 09:32:27 2024          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; proyectofac                                    ;
+; Top-level Entity Name           ; spie                                           ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 11                                             ;
+; Total pins                      ; 9                                              ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; FSM                ; proyectofac        ;
+; Top-level entity name                                                           ; spie               ; proyectofac        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -155,25 +151,182 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; spie.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/spie.sv     ;         ;
+; flipflop.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/flipflop.sv ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 6         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 2         ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 2         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 11        ;
+;                                             ;           ;
+; I/O pins                                    ; 9         ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 13        ;
+; Total fan-out                               ; 53        ;
+; Average fan-out                             ; 1.71      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+; |spie                      ; 2 (2)               ; 11 (0)                    ; 0                 ; 0          ; 9    ; 0            ; |spie                ; spie        ; work         ;
+;    |flipflop:bit00|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit00 ; flipflop    ; work         ;
+;    |flipflop:bit01|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit01 ; flipflop    ; work         ;
+;    |flipflop:bit02|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit02 ; flipflop    ; work         ;
+;    |flipflop:bit03|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit03 ; flipflop    ; work         ;
+;    |flipflop:bit04|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit04 ; flipflop    ; work         ;
+;    |flipflop:bit05|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit05 ; flipflop    ; work         ;
+;    |flipflop:bit06|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit06 ; flipflop    ; work         ;
+;    |flipflop:bit07|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit07 ; flipflop    ; work         ;
+;    |flipflop:bit08|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit08 ; flipflop    ; work         ;
+;    |flipflop:bit10|        ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit10 ; flipflop    ; work         ;
+;    |flipflop:bit9|         ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |spie|flipflop:bit9  ; flipflop    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 11    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; flipflop:bit00|q                        ; 1       ;
+; flipflop:bit01|q                        ; 2       ;
+; flipflop:bit02|q                        ; 2       ;
+; flipflop:bit03|q                        ; 2       ;
+; flipflop:bit04|q                        ; 1       ;
+; flipflop:bit05|q                        ; 1       ;
+; flipflop:bit06|q                        ; 1       ;
+; flipflop:bit07|q                        ; 1       ;
+; flipflop:bit08|q                        ; 1       ;
+; flipflop:bit9|q                         ; 1       ;
+; flipflop:bit10|q                        ; 1       ;
+; Total number of inverted registers = 11 ;         ;
++-----------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 11                          ;
+;     CLR               ; 11                          ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
+;         1 data inputs ; 4                           ;
+;         3 data inputs ; 2                           ;
+; boundary_port         ; 9                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.62                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Wed May  8 18:28:17 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyectofac -c proyectofac --analysis_and_elaboration
+    Info: Processing started: Fri May 10 09:32:06 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyectofac -c proyectofac
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
-    Info (12023): Found entity 1: FSM File: C:/Users/Luis/Desktop/proyectoFAC2/FSM.sv Line: 1
+    Info (12023): Found entity 1: FSM File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsm_tb.sv
-    Info (12023): Found entity 1: fsm_tb File: C:/Users/Luis/Desktop/proyectoFAC2/fsm_tb.sv Line: 1
-Info (12127): Elaborating entity "FSM" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4781 megabytes
-    Info: Processing ended: Wed May  8 18:28:30 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (12023): Found entity 1: fsm_tb File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/fsm_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file spi_slave.sv
+    Info (12023): Found entity 1: SPI_slave File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/SPI_slave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoderslave.sv
+    Info (12023): Found entity 1: decoderSlave File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/decoderSlave.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aluregister.sv
+    Info (12023): Found entity 1: aluRegister File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/aluRegister.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file spie.sv
+    Info (12023): Found entity 1: spie File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/spie.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flipflop.sv
+    Info (12023): Found entity 1: flipflop File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/flipflop.sv Line: 1
+Info (12127): Elaborating entity "spie" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at spie.sv(10): truncated value with size 8 to match size of target (1) File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/spie.sv Line: 10
+Info (12128): Elaborating entity "flipflop" for hierarchy "flipflop:bit10" File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/spie.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at flipflop.sv(6): truncated value with size 32 to match size of target (1) File: C:/Users/Luis/Desktop/ProyectoFAC/L_gonzalez__compu_archi_found_2G1_2023/proyectoFAC2/flipflop.sv Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 12 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Fri May 10 09:32:27 2024
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:45
 
 

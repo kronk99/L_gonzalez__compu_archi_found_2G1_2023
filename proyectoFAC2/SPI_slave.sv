@@ -1,23 +1,22 @@
-module SPI_slave(
-	input logic MOSI, CS, sclk, rst,
-	output logic MISO, );
+module SPI_slave(input logic MOSI, CS, sclk, rst,output logic MISO);
 	//existe la duda si mosi es una señal unica o debe de ser un array de bits
 	
-	logic d; //señal para enviar respuesta al master
-	logic [10:0] instruc_M //codigo enviado por el maestro.
-	
-	assign d = MOSI & CS &~rst; //d es 1 cuando haya algo en el mosi
-	//cs sea 1, y reset sea 0, mosi no debe de contar, puesto que por mosi le voy a pasar
-	//un array de datos dato_recibido <= {MOSI, MOSI, MOSI, MOSI} es para leer
-	//el array de bits que se van a enviar, se van a enviar en total, cambiarlo a futuro
-	instruct_M <={MOSI, MOSI, MOSI, MOSI,MOSI,MOSI,MOSI,MOSI,MOSI,MOSI,MOSI}
-	//va a leer 11 bits
-	
-	assign MISO= rst == 1 ? 255:d; //si es 1 , establece miso en 255, si no 
-	//establece miso como d, high o low , considerando el codigo de mariana, donde 
-	//cualquier dato mayor que 15 se considera reset, y se desconecta.
-	//SALIDA
-	
-	
+	logic [3:0] instruc_M; // Cambiado a 4 bits para soportar hasta F en hexadecimal
+   logic d; // Señal para enviar respuesta al maestro
+
+    always_ff @(posedge sclk or posedge rst) begin
+        if (!rst) begin
+            instruc_M <= 0; // Reinicia el registro de instrucción en 0 durante el reset
+        end else begin
+            if (CS == 1'b0) begin // Cuando CS está activo
+                instruc_M <= {instruc_M[2:0], MOSI}; // Desplaza y almacena el bit de entrada
+            end
+        end
+    end
+
+    assign d = MOSI & CS & ~rst; // d es 1 cuando hay algo en MOSI mientras CS está activo y no hay reset
+    // Si la instrucción es mayor que 15, se considera un reset y se desconecta (no está implementado aquí)
+    assign MISO = rst == 1 ? 8'b1111 : d; // Si hay reset, MISO se establece en todo 1, de lo contrario, toma el valor de d
 	//colocar acá la alu y el pmw
 endmodule
+ 

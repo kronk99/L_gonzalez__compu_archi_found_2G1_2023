@@ -10,6 +10,7 @@ module FSM(input logic clk,rst,Ain,Bin,Cin,output logic info,Alu ,pmw);
 		else begin
 			state = next_state;
 		end
+	end
 
 //Logica del siguiente estado
 	always_comb begin

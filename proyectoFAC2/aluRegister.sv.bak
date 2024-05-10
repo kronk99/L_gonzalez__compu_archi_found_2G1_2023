@@ -1,0 +1,19 @@
+module aluRegister(input logic clk, rst, enable, zero,of,neg,
+input logic [4:0] resultado, output logic logic [4:0] Oresultado,
+output logic Ozero,Oof,Oneg,);
+	reg [3:0] aluresult;
+	reg Izero,Ineg,Iof;
+	
+	always_ff @ (posedge clk or posedge rst)begin
+	//cambiar esto con compuertas.
+		aluresult <= rst ? 4'b0 : ;
+		Izero <=rst ? 1'b0 : zero;
+		Ineg <=rst ? 1'b0 : neg;
+		Iof <=rst ? 1'b0 : of;
+	end
+	assign Oresultado = aluresult
+	assign Ozero = Izero;
+	assign Oof = Iof;
+	assign Oneg = Ineg;
+
+endmodule

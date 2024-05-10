@@ -1,0 +1,308 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000071b06f72, pid=6432, tid=0x000000000000191c
+#
+# JRE version: OpenJDK Runtime Environment (8.0_345-b01) (build 1.8.0_345-b01)
+# Java VM: OpenJDK 64-Bit Server VM (25.345-b01 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0xb6f72]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002413c2fd000):  VMThread [stack: 0x0000005216800000,0x0000005216900000] [id=6428]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0000000080000000
+
+Registers:
+RAX=0x0000000080000000, RBX=0x00000052168fefe0, RCX=0x0000000000000000, RDX=0x0000000080000000
+RSP=0x00000052168fec10, RBP=0x00000000a64afc6c, RSI=0x00000052168fefe0, RDI=0x00000000a64afc68
+R8 =0x00000052168fefe0, R9 =0x0000000000000005, R10=0x0000000000000008, R11=0x00000000a6730000
+R12=0x000000010013a2d8, R13=0x000002413c275790, R14=0x000000010013a4d0, R15=0x00000000a64afc50
+RIP=0x0000000071b06f72, EFLAGS=0x0000000000010287
+
+Top of Stack: (sp=0x00000052168fec10)
+0x00000052168fec10:   00000000a6505b1b 00000000a64afc4c
+0x00000052168fec20:   00000052168fefe0 00000000a64afc50
+0x00000052168fec30:   000000010013a4c8 0000000071b3e9fd
+0x00000052168fec40:   00000000a64afc68 0000000071b66f4e
+0x00000052168fec50:   00000000a64af994 00000000a63aa668
+0x00000052168fec60:   000002413c2754f0 000002413c2fbbd0
+0x00000052168fec70:   0000000000000000 0000000071b1f475
+0x00000052168fec80:   00000000a64afc50 00000052168fefe0
+0x00000052168fec90:   000002412a6f2050 00000000a64fc570
+0x00000052168feca0:   000002412a706910 0000000071b093ad
+0x00000052168fecb0:   00000052168fefe0 00000052168ff070
+0x00000052168fecc0:   000002412a703d60 0000000071b1ed00
+0x00000052168fecd0:   00000000a5fdcd10 0000000071b0df4c
+0x00000052168fece0:   0000000000000000 00000052168ff040
+0x00000052168fecf0:   00000000a5fdcd04 00000000a5fdccf8
+0x00000052168fed00:   00000052168ff040 0000000071b08c34 
+
+Instructions: (pc=0x0000000071b06f72)
+0x0000000071b06f52:   85 c0 0f 84 8a 00 00 00 8b 0d 78 96 6c 00 8b d0
+0x0000000071b06f62:   48 d3 e2 48 03 15 64 96 6c 00 48 3b 53 48 73 72
+0x0000000071b06f72:   48 8b 02 24 03 3c 03 75 1f 48 8b 12 80 3d 12 99
+0x0000000071b06f82:   6d 00 00 74 0d 0f b6 c2 24 07 3c 05 75 04 33 d2 
+
+
+Register to memory mapping:
+
+RAX=0x0000000080000000 is an unknown value
+RBX=0x00000052168fefe0 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000000080000000 is an unknown value
+RSP=0x00000052168fec10 is an unknown value
+RBP=0x00000000a64afc6c is pointing into object: 0x00000000a64afc50
+com.sun.xml.bind.v2.runtime.LifecycleMethods 
+ - klass: 'com/sun/xml/bind/v2/runtime/LifecycleMethods'
+RSI=0x00000052168fefe0 is an unknown value
+RDI=0x00000000a64afc68 is pointing into object: 0x00000000a64afc50
+com.sun.xml.bind.v2.runtime.LifecycleMethods 
+ - klass: 'com/sun/xml/bind/v2/runtime/LifecycleMethods'
+R8 =0x00000052168fefe0 is an unknown value
+R9 =0x0000000000000005 is an unknown value
+R10=0x0000000000000008 is an unknown value
+R11=0x00000000a6730000 is an oop
+sun.misc.Launcher$ExtClassLoader 
+ - klass: 'sun/misc/Launcher$ExtClassLoader'
+R12=0x000000010013a2d8 is pointing into metadata
+R13=0x000002413c275790 is an unknown value
+R14=0x000000010013a4d0 is pointing into metadata
+R15=0x00000000a64afc50 is an oop
+com.sun.xml.bind.v2.runtime.LifecycleMethods 
+ - klass: 'com/sun/xml/bind/v2/runtime/LifecycleMethods'
+
+
+Stack: [0x0000005216800000,0x0000005216900000],  sp=0x00000052168fec10,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xb6f72]
+V  [jvm.dll+0xee9fd]
+V  [jvm.dll+0xcf475]
+V  [jvm.dll+0xb93ad]
+V  [jvm.dll+0xbdf4c]
+V  [jvm.dll+0xb8c34]
+V  [jvm.dll+0xcd8d6]
+V  [jvm.dll+0xcd4a8]
+V  [jvm.dll+0xcd14c]
+V  [jvm.dll+0xb819f]
+V  [jvm.dll+0xbcc60]
+V  [jvm.dll+0xb6b22]
+V  [jvm.dll+0x263d75]
+V  [jvm.dll+0x2209f4]
+V  [jvm.dll+0x21f076]
+V  [jvm.dll+0x21f7af]
+V  [jvm.dll+0x21fbbd]
+V  [jvm.dll+0x26b92a]
+C  [msvcr120.dll+0x24f7f]
+C  [msvcr120.dll+0x25126]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+VM_Operation (0x00000052167fdea0): GenCollectForAllocation, mode: safepoint, requested by thread 0x000002412a6f3000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000002413c408000 JavaThread "Service Thread" daemon [_thread_blocked, id=11412, stack(0x0000005217000000,0x0000005217100000)]
+  0x000002413c36f000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=12148, stack(0x0000005216f00000,0x0000005217000000)]
+  0x000002413c36b800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=6664, stack(0x0000005216e00000,0x0000005216f00000)]
+  0x000002413c368800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=7560, stack(0x0000005216d00000,0x0000005216e00000)]
+  0x000002413c361000 JavaThread "Attach Listener" daemon [_thread_blocked, id=12096, stack(0x0000005216c00000,0x0000005216d00000)]
+  0x000002413c35f800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=1500, stack(0x0000005216b00000,0x0000005216c00000)]
+  0x000002413c330000 JavaThread "Finalizer" daemon [_thread_blocked, id=4088, stack(0x0000005216a00000,0x0000005216b00000)]
+  0x000002413c326000 JavaThread "Reference Handler" daemon [_thread_blocked, id=7708, stack(0x0000005216900000,0x0000005216a00000)]
+  0x000002412a6f3000 JavaThread "main" [_thread_blocked, id=12244, stack(0x0000005216700000,0x0000005216800000)]
+
+Other Threads:
+=>0x000002413c2fd000 VMThread [stack: 0x0000005216800000,0x0000005216900000] [id=6428]
+  0x000002413c40a800 WatcherThread [stack: 0x0000005217100000,0x0000005217200000] [id=10824]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000002412a6f0240] Threads_lock - owner thread: 0x000002413c2fd000
+[0x000002412a6f06c0] Heap_lock - owner thread: 0x000002412a6f3000
+
+heap address: 0x00000000a2400000, size: 1500 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ def new generation   total 68800K, used 68800K [0x00000000a2400000, 0x00000000a6ea0000, 0x00000000c1800000)
+  eden space 61184K, 100% used [0x00000000a2400000, 0x00000000a5fc0000, 0x00000000a5fc0000)
+  from space 7616K, 100% used [0x00000000a6730000, 0x00000000a6ea0000, 0x00000000a6ea0000)
+  to   space 7616K,  70% used [0x00000000a5fc0000, 0x00000000a6505b38, 0x00000000a6730000)
+ tenured generation   total 152960K, used 11060K [0x00000000c1800000, 0x00000000cad60000, 0x0000000100000000)
+   the space 152960K,   7% used [0x00000000c1800000, 0x00000000c22cd250, 0x00000000c22cd400, 0x00000000cad60000)
+ Metaspace       used 12395K, capacity 12666K, committed 12672K, reserved 1060864K
+  class space    used 1352K, capacity 1407K, committed 1408K, reserved 1048576K
+
+Card table byte_map: [0x000002413b510000,0x000002413b800000] byte_map_base: 0x000002413affe000
+
+Polling page: 0x000002412a880000
+
+CodeCache: size=245760Kb used=7007Kb max_used=7007Kb free=238752Kb
+ bounds [0x000002412c150000, 0x000002412c830000, 0x000002413b150000]
+ total_blobs=2393 nmethods=2051 adapters=255
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2.130 Thread 0x000002413c36f000 2071       3       java.nio.Buffer::limit (53 bytes)
+Event: 2.131 Thread 0x000002413c36f000 nmethod 2071 0x000002412c829ed0 code [0x000002412c82a040, 0x000002412c82a350]
+Event: 2.131 Thread 0x000002413c36f000 2072   !   3       sun.reflect.GeneratedMethodAccessor6::invoke (63 bytes)
+Event: 2.131 Thread 0x000002413c36f000 nmethod 2072 0x000002412c82a410 code [0x000002412c82a600, 0x000002412c82ad20]
+Event: 2.131 Thread 0x000002413c36f000 2073   !   3       sun.reflect.GeneratedConstructorAccessor3::newInstance (53 bytes)
+Event: 2.132 Thread 0x000002413c36f000 nmethod 2073 0x000002412c82b0d0 code [0x000002412c82b2c0, 0x000002412c82bb10]
+Event: 2.132 Thread 0x000002413c36f000 2074   !   3       sun.reflect.GeneratedMethodAccessor7::invoke (63 bytes)
+Event: 2.132 Thread 0x000002413c36f000 nmethod 2074 0x000002412c82c0d0 code [0x000002412c82c2c0, 0x000002412c82c9e0]
+Event: 2.133 Thread 0x000002413c36f000 2075   !   3       sun.reflect.GeneratedMethodAccessor8::invoke (63 bytes)
+Event: 2.134 Thread 0x000002413c36f000 nmethod 2075 0x000002412c82cd90 code [0x000002412c82cf80, 0x000002412c82d6a0]
+
+GC Heap History (3 events):
+Event: 1.135 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 68800K, used 61184K [0x00000000a2400000, 0x00000000a6ea0000, 0x00000000c1800000)
+  eden space 61184K, 100% used [0x00000000a2400000, 0x00000000a5fc0000, 0x00000000a5fc0000)
+  from space 7616K,   0% used [0x00000000a5fc0000, 0x00000000a5fc0000, 0x00000000a6730000)
+  to   space 7616K,   0% used [0x00000000a6730000, 0x00000000a6730000, 0x00000000a6ea0000)
+ tenured generation   total 152960K, used 0K [0x00000000c1800000, 0x00000000cad60000, 0x0000000100000000)
+   the space 152960K,   0% used [0x00000000c1800000, 0x00000000c1800000, 0x00000000c1800200, 0x00000000cad60000)
+ Metaspace       used 8742K, capacity 8888K, committed 9216K, reserved 1056768K
+  class space    used 887K, capacity 916K, committed 1024K, reserved 1048576K
+Event: 1.194 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 68800K, used 7616K [0x00000000a2400000, 0x00000000a6ea0000, 0x00000000c1800000)
+  eden space 61184K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a5fc0000)
+  from space 7616K, 100% used [0x00000000a6730000, 0x00000000a6ea0000, 0x00000000a6ea0000)
+  to   space 7616K,   0% used [0x00000000a5fc0000, 0x00000000a5fc0000, 0x00000000a6730000)
+ tenured generation   total 152960K, used 6648K [0x00000000c1800000, 0x00000000cad60000, 0x0000000100000000)
+   the space 152960K,   4% used [0x00000000c1800000, 0x00000000c1e7e208, 0x00000000c1e7e400, 0x00000000cad60000)
+ Metaspace       used 8742K, capacity 8888K, committed 9216K, reserved 1056768K
+  class space    used 887K, capacity 916K, committed 1024K, reserved 1048576K
+}
+Event: 2.135 GC heap before
+{Heap before GC invocations=1 (full 0):
+ def new generation   total 68800K, used 68800K [0x00000000a2400000, 0x00000000a6ea0000, 0x00000000c1800000)
+  eden space 61184K, 100% used [0x00000000a2400000, 0x00000000a5fc0000, 0x00000000a5fc0000)
+  from space 7616K, 100% used [0x00000000a6730000, 0x00000000a6ea0000, 0x00000000a6ea0000)
+  to   space 7616K,   0% used [0x00000000a5fc0000, 0x00000000a5fc0000, 0x00000000a6730000)
+ tenured generation   total 152960K, used 6648K [0x00000000c1800000, 0x00000000cad60000, 0x0000000100000000)
+   the space 152960K,   4% used [0x00000000c1800000, 0x00000000c1e7e208, 0x00000000c1e7e400, 0x00000000cad60000)
+ Metaspace       used 12395K, capacity 12666K, committed 12672K, reserved 1060864K
+  class space    used 1352K, capacity 1407K, committed 1408K, reserved 1048576K
+
+Deoptimization events (10 events):
+Event: 1.567 Thread 0x000002412a6f3000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000002412c5936e8 method=java.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 91
+Event: 1.567 Thread 0x000002412a6f3000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000002412c5936e8 method=java.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 91
+Event: 1.567 Thread 0x000002412a6f3000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000002412c5949d8 method=java.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 91
+Event: 1.640 Thread 0x000002412a6f3000 Uncommon trap: reason=predicate action=maybe_recompile pc=0x000002412c5d0180 method=java.lang.String.regionMatches(ZILjava/lang/String;II)Z @ 63
+Event: 1.677 Thread 0x000002412a6f3000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002412c5463f0 method=com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement()Z @ 200
+Event: 1.677 Thread 0x000002412a6f3000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002412c514f40 method=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/xni/XMLAttrib
+Event: 1.678 Thread 0x000002412a6f3000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002412c514f40 method=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/xni/XMLAttrib
+Event: 1.682 Thread 0x000002412a6f3000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002412c514f40 method=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/xni/XMLAttrib
+Event: 1.682 Thread 0x000002412a6f3000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x000002412c514f40 method=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Lcom/sun/org/apache/xerces/internal/xni/QName;Lcom/sun/org/apache/xerces/internal/xni/XMLAttrib
+Event: 1.757 Thread 0x000002412a6f3000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002412c4cb434 method=com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanContent(Lcom/sun/org/apache/xerces/internal/xni/XMLString;)I @ 275
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 2.051 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a59aa9d0) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.059 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5a4bf10) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.067 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5af0908) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.075 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5b95308) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.085 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5c39818) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.094 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5cdc0c8) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.103 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5d7ea58) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.112 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5e25848) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.122 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5ec8fd8) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+Event: 2.130 Thread 0x000002412a6f3000 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x00000000a5f6c8d8) thrown at [J:\jenkins\tmp\workspace\build\src\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 217]
+
+Events (10 events):
+Event: 2.125 loading class java/lang/ObjectFactory done
+Event: 2.130 loading class com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader
+Event: 2.130 loading class com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader done
+Event: 2.132 loading class java/lang/ObjectFactory
+Event: 2.132 loading class java/lang/ObjectFactory done
+Event: 2.133 loading class java/lang/ObjectFactory
+Event: 2.133 loading class java/lang/ObjectFactory done
+Event: 2.134 loading class java/lang/ObjectFactory
+Event: 2.134 loading class java/lang/ObjectFactory done
+Event: 2.134 Executing VM operation: GenCollectForAllocation
+
+
+Dynamic libraries:
+0x00007ff6da0d0000 - 0x00007ff6da10a000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\java.exe
+0x00007fffa63b0000 - 0x00007fffa65a8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fffa4b30000 - 0x00007fffa4bed000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fffa3af0000 - 0x00007fffa3de6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fffa6290000 - 0x00007fffa6340000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fffa4c20000 - 0x00007fffa4cbe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fffa5980000 - 0x00007fffa5a20000 	C:\WINDOWS\System32\sechost.dll
+0x00007fffa5bc0000 - 0x00007fffa5ce3000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fffa4180000 - 0x00007fffa41a7000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007fffa5a20000 - 0x00007fffa5bbf000 	C:\WINDOWS\System32\USER32.dll
+0x00007fffa43b0000 - 0x00007fffa43d2000 	C:\WINDOWS\System32\win32u.dll
+0x00007fffa4bf0000 - 0x00007fffa4c1b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fffa3eb0000 - 0x00007fffa3fc7000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fffa41b0000 - 0x00007fffa424d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fffa3fd0000 - 0x00007fffa40d0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fffa2d30000 - 0x00007fffa2fca000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007fffa5860000 - 0x00007fffa5892000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fff364f0000 - 0x00007fff365df000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\msvcr120.dll
+0x00007fff36440000 - 0x00007fff364e6000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\msvcp120.dll
+0x0000000071a50000 - 0x00000000722c1000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\server\jvm.dll
+0x00007fffa4d70000 - 0x00007fffa4d78000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007fff8a510000 - 0x00007fff8a519000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff96650000 - 0x00007fff96677000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fffa4a60000 - 0x00007fffa4acb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fffa14d0000 - 0x00007fffa14da000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff7c7e0000 - 0x00007fff7c7ef000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\verify.dll
+0x00007fff536f0000 - 0x00007fff53719000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\java.dll
+0x00007fff44800000 - 0x00007fff44816000 	C:\users\luis\documents\intelquartus\quartus\bin64\jre64\bin\zip.dll
+0x00007fffa4d80000 - 0x00007fffa54eb000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007fffa0cd0000 - 0x00007fffa146e000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007fffa5e20000 - 0x00007fffa6173000 	C:\WINDOWS\System32\combase.dll
+0x00007fffa2fd0000 - 0x00007fffa2ffe000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007fffa5d50000 - 0x00007fffa5e1d000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007fffa54f0000 - 0x00007fffa559d000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007fffa56e0000 - 0x00007fffa5735000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007fffa3990000 - 0x00007fffa39b3000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007fff83a10000 - 0x00007fff83b9b000 	C:\Users\Luis\Documents\INTELQUARTUS\quartus\bin64\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Xmx1500M -XX:+UseSerialGC 
+java_command: com.altera.sopcmodel.sbtools.sbcatalog.SbCatalog --xml --project-directory= --search-path=$,C:\Users\Luis\Desktop\ProyectoFAC\L_gonzalez__compu_archi_found_2G1_2023\proyectoFAC2,C:\Users\Luis\Desktop\ProyectoFAC\L_gonzalez__compu_archi_found_2G1_2023\proyectoFAC2
+java_class_path (initial): C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\Nlview.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\TableLayout.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\appframework-1.03.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\asm-3.1.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\asm-commons-3.1.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\basicmodel.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\beansbinding-1.2.1.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\binding-2.0.6.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.componenteditor2.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.app_lib.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.editor.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.elements.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.core.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.hal.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.plugin.lwhal.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.schema.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.bsp.scripting.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.commandline.jar;C:/users/luis/documents/intelquartus/quartus/sopc_builder/model/lib\com.altera.embeddedsw.cpexample.jar;C:/users/luis/documents/i
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/users/luis/documents/intelquartus/quartus/bin64;c:\users\luis\documents\intelquartus\quartus\bin64\;c:\users\luis\documents\intelquartus\quartus\bin64\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\mingw64\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\Luis\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Luis\AppData\Local\Programs\Python\Python311\;C:\Users\Luis\AppData\Local\Microsoft\WindowsApps;C:\Users\Luis\AppData\Local\GitHubDesktop\bin;C:\Users\Luis\AppData\Local\gitkraken\bin;C:\Users\Luis\.dotnet\tools;C:\Users\Luis\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files\JetBrains\JetBrains Rider 2023.1.2\bin;;C:\Users\Luis\Documents\MSY2\ucrt64\bin;C:\Users\Luis\Documents\FPGA\modelsim_ase\win32aloem;C:\Users\Luis\AppData\Roaming\npm;C:\Users\Luis\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Luis
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.3636)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 23 model 24 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 14563596k(8123304k free), swap 29243660k(21266608k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.345-b01) for windows-amd64 JRE (1.8.0_345-b01), built on Aug  2 2022 10:16:38 by "jenkins" with MS VC++ 12.0 (VS2013)
+
+time: Thu May 09 20:38:03 2024
+timezone: Hora estándar, América Central
+elapsed time: 2.289395 seconds (0d 0h 0m 2s)
+
