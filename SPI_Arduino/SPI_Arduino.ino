@@ -32,9 +32,15 @@ void loop() {
       }
       inputBuffer[index] = '\0';
       
-      // Código para la comunicación SPI
+      SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
+      int toSend;
+      for(int i = 0; inputBuffer[i] != '\0'; i++){
+        // Código para enviar datos SPI
+      }
+      
     }   
 }
+
 
 
 void handshake(){
