@@ -13,8 +13,29 @@ void setup() {
 }
 
 void loop() {
-    // Código para la comunicación y operaciones después del handshake
+    if(handshakeConfirmation){
+      int resp=0;
+      char inputBuffer[20]; // Buffer para almacenar la entrada del usuario
+      // Espera a que se ingrese un número desde la terminal serial
+      while (!Serial.available()) {
+          delay(100); // Espera a que haya datos disponibles en el puerto serial
+      }
+      // Lee la entrada del usuario hasta que se presiona Enter
+      int index = 0;
+      while (Serial.available() > 0) {
+        char incomingByte = Serial.read();
+        if (incomingByte == '\n') {
+          break; // Sale del bucle cuando se presiona Enter
+        }
+        inputBuffer[index++] = incomingByte;
+        delay(10); // Pequeña pausa para dar tiempo a recibir los siguientes caracteres
+      }
+      inputBuffer[index] = '\0';
+      
+      // Código para la comunicación SPI
+    }   
 }
+
 
 void handshake(){
   digitalWrite(SS, LOW); //envia un 0
